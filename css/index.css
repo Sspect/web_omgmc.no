@@ -1,0 +1,27 @@
+body{
+    background-image: url("../img/Dirt_\(texture\)_JE2_BE2.png");
+}
+
+.container {
+    background-image: url("../img/Obsidian_29_JE1_BE1.webp");
+}
+
+.map {
+    border-radius: 10px;
+    border: solid 5px #ffffff;
+    width: 99%;
+}
+
+#selectedPage {
+    color: #16001a;
+}
+
+.container_black {
+    background-color: #000000;
+    border: #ffffff 5px solid;
+    border-radius: 10px;
+    padding-left: 20px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
