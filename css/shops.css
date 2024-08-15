@@ -1,3 +1,42 @@
 body{
-    background-image:  url("../img/Block_of_Diamond_\(texture\)_JE4_BE3.png");
+    background-image:  url("../img/Dirt_\(texture\)_JE2_BE2.png");
+}
+.container {
+    background-image: url("../img/Block_of_Diamond_\(texture\)_JE4_BE3.png");
+}
+.shop_image
+{   
+    /* making the image 700 x 500 and unstreatching the image */
+    
+    width: 97%;
+    object-fit: cover;
+    
+    
+    /* making the image lock nice withe shadow and border */
+    border: 5px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+}
+.item_image
+{
+    /* making the image 700 x 500 and unstreatching the image */
+    
+    width: 50px;
+    height: 50px;
+
+    /* making the image in line withe the tex */
+    vertical-align: middle;
+
+    
+}
+
+.container_black {
+    vertical-align: middle;
+    color: #000000;
+    background-color: #ffffff;
+    border: #000000 5px solid;
+    border-radius: 10px;
+    padding-left: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
