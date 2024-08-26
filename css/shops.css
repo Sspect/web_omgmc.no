@@ -26,8 +26,30 @@ body{
 
     /* making the image in line withe the tex */
     vertical-align: middle;
+    padding: 4px;
+    border-radius: 20px;
 
     
+}
+.item_image:hover
+{
+    border-radius: 20px;
+    background-color: #e6e6e6;
+    box-shadow: 5px 5px 5px black;
+}
+.image_decor
+{
+    /* making the image 700 x 500 and unstreatching the image */
+    
+    width: 400px;
+    float: right;
+    border-radius: 10px;
+    
+    /* move the immage upp using relativ posission */
+    position: relative;
+    top: -240px;
+    right: 2%;
+
 }
 
 .container_black {
