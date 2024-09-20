@@ -1,0 +1,58 @@
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url("../fonts/minecraft-font/MinecraftRegular-Bmg3.otf") format('truetype');
+}
+body{
+    color: #ffffff;
+    font-family: 'Minecraft', sans-serif;
+    font-size: large;
+}
+.pageConteriner{
+    background-color: #000000;
+    border: #ffffff 5px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Header ___________________________________________________________________ */
+.HeaderFormat{
+    /* Text */
+    color: rgb(0, 0, 0) !important;
+    font-size: 30px;
+    font-family: 'Minecraft', sans-serif;
+}
+.HeaderFormat:hover{
+    /* Hover box */
+    background-image: url("../img/netherrack.jpg");
+    background-size: 20%;
+    border-radius: 10px;
+    color: #ffffff !important;
+}
+.align-right {
+    margin-left: auto;
+}
+
+.nav-header{
+    background-image: url("../img/Nether_Portal_\(texture\)_JE2-a1.gif");
+    background-size: 10%;
+    margin-bottom: 0px;
+    border: none;
+}
+
+.Obsidian{
+    background-image: url("../img/Obsidian_29_JE1_BE1.webp");
+    padding: 3%;
+    background-size: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 4px black;
+    margin: 20px;
+}
+
+.Selected{
+    color: #ffffff !important;
+}
+
+.dropdown-menu{
+    border-radius: 20px;
+}

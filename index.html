@@ -2,116 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OmgMC</title>
-    <!-- Logo -->
-    <link rel="icon" href="img/omglogo.png" type="image/x-icon">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/omglogo.png" type="image/x-icon">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/style.css">
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="CSS/Global.css">
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="CSS/Index.css">
+    <title>OMGMC Home</title>
 </head>
 <body>
-    <!-- Header -->
-    <img src="img/minecraft_title.png" alt="omgmc logo" class="logo">
-    <div class="container">
-        <header>
-            <a id="selectedPage" href="index.html">Home</a>
-            <a href="minigames.html">Minigames</a>
-            <a href="shops.html">Shops</a>
-            <a href="http://map.omgmc.no/">Map</a>
-            <a href="https://spillvert.statuspage.io/">Server Status</a>
-        </header>
-        <!-- 
-            
-            <h1>Oslomet Minecraft server</h1>
-            <p>Here you can se information about the official OMG Minecraft server!</p>
-            <p>Grab your pickaxes, put on your armor, and get ready to embark on new adventures with your fellow OMG members.</p>
-            
-        -->
+    <div class="Obsidian">
+        <nav class="nav-header navbar">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <!-- Home -->
+                    <li><a class="HeaderFormat Selected" href="Index.html">Home</a></li>
+                    <!-- Minigaming -->
+                    <li><a class="HeaderFormat" href="Minigaming.html">Minigaming🫐</a></li>
+                    <!-- Discord -->
+                    <li><a class="HeaderFormat" href="https://linktr.ee/oslometgaming">Discord</a></li>
+                </ul>
+                <ul class="nav navbar-nav align-right">
+                    <!-- SMP -->
+                    <li class="dropdown"><a class="HeaderFormat dropdown-toggle" data-toggle="dropdown" href="#">SMP<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="HeaderFormat" href="Shops.html">Shops</a></li>
+                            <li><a class="HeaderFormat" href="Minigames.html">Minigames</a></li>
+                            <li><a class="HeaderFormat" href="http://map.omgmc.no/">Map</a></li>
+                            <li><a class="HeaderFormat" href="Places.html">Places</a></li>
+                            <li><a class="HeaderFormat" href="https://spillvert.statuspage.io/">Server</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Roads.html -->
+                <ul class="nav navbar-nav">
+                    <li><a class="HeaderFormat" href="Roads.html">Roads</a></li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <!-- End of Header -->
+        <div class="pageConteriner">
             <br>
-        <div class="container_black">
-            <h2>How to Get Whitelisted:</h2>
-            <p>Type <strong>Whitelist &lt;YourMinecraftName&gt;</strong> in the MINECRAFT chat on Discord. We will add you to the whitelist ASAP.</p>
+            <img id="smp" src="img/title.png" alt="">
+            <br>
+            <h2>This website</h2>
+            <p>This website provides information about OsloMet Gaming's Minecraft activities. 
+                Most of the content focuses on the SMP (Survival Multiplayer) 
+                server, including server status, maps, events, rules, and key locations on the server. But there's also information about Minecraft events by omgs online event organizer (Lyv)</p>
+            <br>
+            
         </div>
         <br>
-        <div class="container_black">
+        <br>
+        <div class="pageConteriner">
+            <br>
+            <img id="smp" src="img/oslomet_smp.png" alt="">
+            <br>
+            <h1>About the SMP server</h1>
+            <p>The Oslo Met SMP is a Minecraft server accessible at the IP omgmc.no It is a safe, friendly server focused on providing a mostly vanilla Minecraft experience with minimal modded content. You can join the server by launching Minecraft version 1.21 and using the provided IP. While there are a few mods, the gameplay remains largely vanilla. Our community features designated areas for specific activities, such as a shopping district and a mini-game district, to enhance the collaborative experience</p>
+            <br>
+            
+            <div class="container_black">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Server Details:</h2>
+                        <ul>
+                            <li>🌐 <strong>IP Address:</strong> omgmc.no</li>
+                            <li>🗺️ <strong>Server map:</strong> <a href="http://map.omgmc.no/" target="_blank" class="text_link">http://map.omgmc.no/</a></li>
+                            <li>🖥️ <strong>Minecraft version:</strong> 1.21</li>
+                            <li>🌱 <strong>Seed:</strong> 6297611932099314171</li>
+                            <li>💀 <strong>Difficulty:</strong> normal</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Plugins:</h2>
+                        <ul>
+                            <li>⚰️ Player Graves</li>
+                            <li>🧟 Villager Saver</li>
+                            <li>🛬 Player Teleport</li>
+                            <li>🏠 Sethome and Warps</li>
+                            <li>🔥 No Fire Spread</li>
+                            <li>🛏️ One Player Sleep</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- useful commands -->
             <h2>Useful commands</h2>
             <ul>
-                <li><strong>/sethome</strong> <br>Set your home location.</li>
-                <li><strong>/home</strong> <br>Teleport to your home location.</li>
-                <li><strong>/warp Shops</strong> <br>Teleport to shops.</li>
-                <li><strong>/warp Games</strong> <br>Teleport to games.</li>
-                <li><strong>/warp Spawn</strong> <br>Teleport to spawn.</li>
-                <li><strong>/tpa &lt;player&gt;</strong> <br>Request to teleport to a player.</li>
-                <li><strong>/warputils personal</strong> <br>Change teleporting effects</li>
-                <li><strong>/random roll 1..6</strong> <br> Roll a dice</li></li>
-                <li><strong>/msg &lt;player&gt;</strong> <br> Send a private message to a player</li></li>
-                <!-- /me -->
-                <li><strong>/me</strong> <br> Send a message in the third person</li></li>
-                <!-- /graves -->
-                <li><strong>/graves</strong> <br> List all your graves</li></li>
-                
-
-
-
-                
-                
+            <li><strong>/sethome</strong> <br>Set your home location.</li>
+            <li><strong>/home</strong> <br>Teleport to your home location.</li>
+            <li><strong>/warp Shops</strong> <br>Teleport to shops.</li>
+            <li><strong>/warp Games</strong> <br>Teleport to games.</li>
+            <li><strong>/warp Spawn</strong> <br>Teleport to spawn.</li>
+            <li><strong>/tpa &lt;player&gt;</strong> <br>Request to teleport to a player.</li>
+            <li><strong>/warputils personal</strong> <br>Change teleporting effects</li>
+            <li><strong>/random roll 1..6</strong> <br> Roll a dice</li></li>
+            <li><strong>/msg &lt;player&gt;</strong> <br> Send a private message to a player</li></li>
+            <!-- /me -->
+            <li><strong>/me</strong> <br> Send a message in the third person</li></li>
+            <!-- /graves -->
+            <li><strong>/graves</strong> <br> List all your graves</li></li>
+            <br>
+            <br>
+            <!-- RULES -->
+            <h1>SMP Server Rules</h1>
+            <p>These rules may be adjusted as needed.</p>
+            
+            <h2>1️⃣ Respect All Players</h2>
+            <p>No harassment, hate speech, or bullying. Treat everyone with kindness.</p>
+            
+            <h2>2️⃣ How to get whitelisted:</h2>
+            <p>You must be a member of the OsloMet Gaming Discord server for at least TWO WEEKS.</p>
+            <p>Add the ✅ reaction to this post (on Discord) to get whitelisted, and by doing so, you agree to all the rules.</p>
+            <p>To get whitelisted, simply type: whitelist &lt;MinecraftUserName&gt;</p>
+            
+            <h2>3️⃣ No griefing:</h2>
+            <p>Absolutely no griefing! Don't destroy or steal from other players' builds or property. Our admins can track any items taken from chests. If you are caught stealing, you will be banned immediately.</p>
+            
+            <h2>4️⃣ Protect the Environment</h2>
+            <p>Don’t cause excessive damage to the landscape (e.g., avoid leaving floating trees).</p>
+            
+            <h2>5️⃣ Follow Staff Instructions</h2>
+            <p>Server Helpers and admins have the final say. Respect their decisions. Not doing so may result in warnings, temporary bans, or permanent removal from the server. If there is a large dispute, you may reach out to one of the OMG Board members.</p>
+            
+            <h2>6️⃣ Report Issues</h2>
+            <p>If you see someone breaking the rules, report it to a Helper, admin or board member.</p>
+            
+            <h2>7️⃣ No Cheating or Hacking</h2>
+            <p>Using mods, hacks, or exploits that give an unfair advantage is strictly prohibited.</p>
+            
+            <!-- SMP Rules -->
+            
         </div>
-        <br>
-        <table class="container_black">
-            <tr>
-                <td>
-                    <h2>Server Details:</h2>
-                </td>
-                <td>
-                    <h2>Plugins:</h2>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <ul>
-                        <li>🌐 <strong>IP Address:</strong> omgmc.no</li>
-                        <li>🗺️ <strong>Server map:</strong> <a href="http://map.omgmc.no/" target="_blank" class="text_link">http://map.omgmc.no/</a></li>
-                        <li>🖥️ <strong>Minecraft version:</strong> 1.21</li>
-                        <li>🌱 <strong>Seed:</strong>6297611932099314171</li>
-                        <li>💀 <strong>Difficulty:</strong> normal</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>⚰️ Player Graves</li>
-                        <li>🧟 Villager Saver</li>
-                        <li>🛬 Player Teleport</li>
-                        <li>🏠 Sethome and Warps</li>
-                        <li>🔥 No Fire Spread</li>
-                        <li>🛏️ One Player Sleep</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-        <br>
-        <div class="container_black">
-
-            <h2>Rules:</h2>
-            <ul>
-                <li><strong>No Hacking or Cheating:</strong> <br>Absolutely no use of hacks, cheats, or any third-party modifications that give you an unfair advantage.</li>
-                <li><strong>Respect Others:</strong> <br>Treat all players with respect. No harassment, bullying, or toxic behavior will be tolerated.</li>
-                <li><strong>Follow Discord Rules:</strong> <br>All players must adhere to the Discord server rules.</li>
-                <li><strong>No Griefing:</strong> <br>Do not destroy or alter other players builds without their permission.</li>
-                <li><strong>No Stealing:</strong> <br>Do not take items that belong to other players without permission.</li>
-                <li><strong>Play Fair:</strong> <br>No exploiting game glitches or bugs (Beyond the base game). If you find one, report it to the admins immediately.</li>
-                <li><strong>Designated building areas:</strong> <br>In the picture below, you can see where you're allowed to build shops and mini games. Please refrain from building anything else in this area.</li>
-            </ul>
-        </div>
-            <!-- Image -->
-             <br>
-        <img class="map" src="img/map.png" alt="picture of map">
     </div>
 </body>
+
 </html>

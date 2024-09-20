@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    /* Add padding to avoid header overlap */
+    body {
+      padding-top: 100px; /* Adjust according to your header's height */
+    }
+
+    /* Custom CSS for sticky behavior */
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+  </style>
+  <title>Scrollspy with Sticky Nav (Bootstrap 3.4.1)</title>
+</head>
+<body data-spy="scroll" data-target="#navbar-example" data-offset="0">
+
+  <!-- Header -->
+  <header class="bg-primary text-white p-4" style="height: 100px;">
+    <h1>Header</h1>
+  </header>
+
+  <!-- Scrollspy Navigation -->
+  <nav id="navbar-example" class="nav nav-pills nav-stacked">
+    <a class="nav-link" href="#section1">Section 1</a>
+    <a class="nav-link" href="#section2">Section 2</a>
+    <a class="nav-link" href="#section3">Section 3</a>
+  </nav>
+
+  <!-- Content sections -->
+  <div class="container">
+    <section id="section1" style="height: 600px;">
+      <h2>Section 1</h2>
+      <p>Content for section 1...</p>
+    </section>
+    <section id="section2" style="height: 600px;">
+      <h2>Section 2</h2>
+      <p>Content for section 2...</p>
+    </section>
+    <section id="section3" style="height: 600px;">
+      <h2>Section 3</h2>
+      <p>Content for section 3...</p>
+    </section>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    // jQuery to handle scroll behavior
+    $(document).ready(function() {
+      var nav = $('#navbar-example');
+      var navOffset = nav.offset().top; // Get the initial position of the nav
+
+      $(window).scroll(function() {
+        var scrollPos = $(window).scrollTop();
+
+        if (scrollPos >= navOffset) {
+          nav.addClass('sticky');
+        } else {
+          nav.removeClass('sticky');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
